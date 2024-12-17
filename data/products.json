@@ -13,7 +13,7 @@
         "name": "РЮ",
         "price": 2700,
         "discount": 3000,
-        "img": "images/sushi2.jpg",
+        "img": "images/sushi2.jpeg",
         "description": "Жареный ролл",
         "product__type": "sushi"
     },
@@ -22,7 +22,7 @@
         "name": "Сэндвич MAN с лососем",
         "price": 2300,
         "discount": 2800,
-        "img": "images/sushi3.jpg",
+        "img": "images/sushi3.jpeg",
         "description": "С лососем",
         "product__type": "sandwich"
     },
@@ -31,7 +31,7 @@
         "name": "Сэндвич MAN с крабом",
         "price": 900,
         "discount": 2300,
-        "img": "images/sushi4.jpg",
+        "img": "images/sushi4.jpeg",
         "description": "С крабом",
         "product__type": "sandwich"
     },
@@ -40,7 +40,7 @@
         "name": "Сэндвич ролл с крабом",
         "price": 900,
         "discount": 2300,
-        "img": "images/sushi5.jpg",
+        "img": "images/sushi5.jpeg",
         "description": "С крабом",
         "product__type": "roll"
     },
@@ -49,7 +49,7 @@
         "name": "Якудза",
         "price": 2900,
         "discount": 3400,
-        "img": "images/sushi6.jpg",
+        "img": "images/sushi6.jpeg",
         "description": "Холодный ролл",
         "product__type": "sushi"
     },
@@ -58,7 +58,7 @@
         "name": "Токио",
         "price": 2200,
         "discount": 3800,
-        "img": "images/sushi7.jpg",
+        "img": "images/sushi7.jpeg",
         "description": "Холодный ролл",
         "product__type": "sushi"
     },
@@ -67,7 +67,7 @@
         "name": "ЯТО",
         "price": 3300,
         "discount": 4000,
-        "img": "images/sushi8.jpg",
+        "img": "images/sushi8.jpeg",
         "description": "Холодный ролл",
         "product__type": "sushi"
     },
@@ -76,7 +76,7 @@
         "name": "Красный дракон",
         "price": 3400,
         "discount": 4000,
-        "img": "images/sushi6.jpeg",
+        "img": "images/sushi9.jpeg",
         "description": "Опалённый ролл (ср-острый)",
         "product__type": "sushi"
     },
@@ -85,7 +85,7 @@
         "name": "Золотой дракон",
         "price": 3400,
         "discount": 4000,
-        "img": "images/sushi7.jpeg",
+        "img": "images/sushi10.jpeg",
         "description": "Холодный ролл",
         "product__type": "sushi"
     },
@@ -94,7 +94,7 @@
         "name": "СЭНКУ",
         "price": 3000,
         "discount": 3500,
-        "img": "images/sushi8.jpeg",
+        "img": "images/sushi11.jpeg",
         "description": "Холодный ролл",
         "product__type": "sushi"
     },
@@ -103,7 +103,7 @@
         "name": "Хару",
         "price": 3000,
         "discount": 3500,
-        "img": "images/sushi9.jpeg",
+        "img": "images/sushi12.jpeg",
         "description": "Опалённые ролл",
         "product__type": "sushi"
     },
@@ -112,7 +112,7 @@
         "name": "Нами",
         "price": 2800,
         "discount": 3300,
-        "img": "images/sushi10.jpeg",
+        "img": "images/sushi13.jpeg",
         "description": "Холодный ролл",
         "product__type": "sushi"
     },
@@ -121,7 +121,7 @@
         "name": "Изуми",
         "price": 3400,
         "discount": 3900,
-        "img": "images/sushi11.jpeg",
+        "img": "images/sushi14.jpeg",
         "description": "Холодный ролл",
         "product__type": "sushi"
     },
@@ -130,7 +130,7 @@
         "name": "Хакуна Матата",
         "price": 3200,
         "discount": 3800,
-        "img": "images/sushi12.jpeg",
+        "img": "images/sushi15.jpeg",
         "description": "Холодный ролл (ср-острый)",
         "product__type": "sushi"
     },
@@ -139,7 +139,7 @@
         "name": "Йоко",
         "price": 3200,
         "discount": 3800,
-        "img": "images/sushi13.jpeg",
+        "img": "images/sushi16.jpeg",
         "description": "Запечённый ролл",
         "product__type": "sushi"
     },
@@ -257,7 +257,7 @@
         "price": 3000,
         "discount": 3600,
         "img": "images/sushi29.jpeg",
-        "description": "ХЗ",
+        "description": "⠀",
         "product__type": "sushi"
     },
     {
