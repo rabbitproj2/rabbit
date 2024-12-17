@@ -10,6 +10,16 @@
 
 <body>
 
+
+
+    <div class="side__btns-wrapper">
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><img
+                src="images/arrow_upward_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="" class="arrow_top-img"></button>
+        <button class="nav-btn_cart none" id="checkout__btn">
+            <a href="checkout.html" class="checkout-button"><img src="images/shopping-basket.png" alt="" ></a>
+        </button>
+    </div>
+   
     <div class="info_wrapper">
         <div class="overlay"></div>
         <div class="show-info-adress">
@@ -18,65 +28,134 @@
         </div>
     </div>
 
-    
+    <!---HEADER__MOBILE-->
 
-    <header>
+
+
+    <header class="header__main">
+
         <img class="logo" src="images/logo.png" />
         <div class="header-section">
             <p class="name">Rabbit</p>
+            <div class="header__logo_mobile">
+                <img class="logo_mobile" src="images/logo.png" />
+                <p class="name__mobile">Rabbit</p>
+            </div>
+            
             <nav class="nav-header">
                 <div class="nav-btns">
-                    <button class="nav-btn" id='adress'>
+                    <button class="nav-btn" data-info-type='adress'>
                         <p>Адрес</p>
                     </button>
-                    <button class="nav-btn" id="delivery">
+                    <button class="nav-btn" data-info-type="delivery">
                         <p>Доставка</p>
                     </button>
-                    <button class="nav-btn" id="pay">
+                    <button class="nav-btn" data-info-type="pay">
                         <p>Оплата</p>
                     </button>
-                    <button class="nav-btn" id="contacts">
+                    <button class="nav-btn" data-info-type="contacts">
                         <p>Контакты</p>
                     </button>
-                   
+
                 </div>
                 <a href="tel:+77084710300" style="color: #f33340;" class="teleph">+7 (708) 471-03-00</a>
             </nav>
             <p class="invis"></p>
+            <button class="nav-btn_cart">
+                <a href="checkout.html" class="checkout-button"><img src="images/shopping-basket.png" alt=""></a>
+            </button>
+        </div>
+    </header>
+
+    <header class="header_mobile">
+        <div class="header__logo">
+            <img class="logo" src="images/logo.png" />
+            <p class="name">Rabbit</p>
+        </div>
+        <div class="header__logo_mobile">
+            <img class="logo_mobile" src="images/logo.png" />
+            <p class="name__mobile">Rabbit</p>
+        </div>
+        <div class="header-section">
+
+            <div class="off_screen_menu">
+                <button class="cross">
+                    <img src="images/icons8-минус-24.png" alt="Close">
+                </button>
+                <div class="nav-btns">
+                    <button class="nav-btn" data-info-type="adress">
+                        <p>Адрес</p>
+                    </button>
+                    <button class="nav-btn" data-info-type="delivery">
+                        <p>Доставка</p>
+                    </button>
+                    <button class="nav-btn" data-info-type="pay">
+                        <p>Оплата</p>
+                    </button>
+                    <button class="nav-btn" data-info-type="contacts">
+                        <p>Контакты</p>
+                    </button>
+                </div>
+                <div class="burder_menu_bottom">
+                    <div class="menu_bottom_phone">
+                        <p>+7 (708) 471-03-00</p>
+                    </div>
+                    <div class="burger__bottom_button">
+                        <a href="#" class="item_burger_btn">Написать в WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+            <nav class="nav-header">
+                <a href="tel:+77084710300" style="color: #f33340;" class="teleph">+7 (708) 471-03-00</a>
+
+            </nav>
+            <div class="ham__menu">
+                <button class="ham_Btn">
+                    <img src="images/free-icon-menu-bar-8.png" alt="">
+                </button>
+
+            </div>
             <button class="nav-btn">
                 <a href="checkout.html" class="checkout-button"><img src="images/shopping-basket.png" alt=""></a>
             </button>
         </div>
     </header>
+
     <!---HEAAAAAAAAAAAAAAADDDDDDDDDDDDDDDDDEEEEEEEEEEEEERRRRRRRRRRRRRRRRRRRRR 2222222222222222222222222222222-->
     <div class="header-2">
-    
+
         <div class="container">
-            <div class="header">
-                СУШИ•ПИЦЦА•ШАШЛЫК <br />
-                ГОРЯЧЕЕ САЛАТЫ
-            </div>
-            <div class="addition-info">
-                <p class="discount">Скидки и Акции в инстаграме</p>
-                <div class="contact-info">
-                    <img src="images/phone-call.png" alt="#" class="phone-icon" />
-                    <div class="phones">
-                        <p class="phone-1">+7 (708) 471-03-00 - 11 мкр</p>
-                        <p class="phone-2">+7 (708) 471-03-03 - Батыс</p>
+            <div class="header_two_container">
+                <div class="header">
+                    СУШИ•ПИЦЦА•ШАШЛЫК <br />
+                    ГОРЯЧЕЕ САЛАТЫ
+                </div>
+                <div class="addition-info">
+                    <p class="discount">Скидки и Акции в инстаграме</p>
+                    <div class="contact-info">
+                        <div class="phone__img">
+                            <img src="images/phone-call.png" alt="#" class="phone-icon" />
+                        </div>
+
+                        <div class="phones">
+                            <p class="phone-1">+7 (708) 471-03-00 - 11 мкр</p>
+                            <p class="phone-2">+7 (708) 471-03-03 - Батыс</p>
+                        </div>
+                    </div>
+                    <div class="address-block">
+                        <img src="images/location-pin.png" alt="#" class="location" />
+                        <div class="adresess">
+                            <p class="address-1">11 мкр, ул. Әз Наурыз 17</p>
+                            <p class="address-2">Пр. А. Молдагуловой 65А</p>
+                        </div>
+                    </div>
+                    <div class="instagram">
+                        <img src="images/insta.png" alt="#" class="insta-icon" />
+                        <p>rabbit.dostavka</p>
                     </div>
                 </div>
-                <div class="address-block">
-                    <img src="images/location-pin.png" alt="#" class="location" />
-                    <div class="adresess">
-                        <p class="address-1">11 мкр, ул. Әз Наурыз 17</p>
-                        <p class="address-2">Пр. А. Молдагуловой 65А</p>
-                    </div>
-                </div>
-                <div class="instagram">
-                    <img src="images/insta.png" alt="#" class="insta-icon" />
-                    <p>rabbit.dostavka</p>
-                </div>
             </div>
+
         </div>
     </div>
 
@@ -85,16 +164,16 @@
         <div class="container">
             <!-- Навигация по категориям -->
             <nav class="main__nav">
-                <button class="nav-btn main__nav_btn" data-type="sushi">Суши роллы</button>
-                <button class="nav-btn main__nav_btn" data-type="pizza">Пицца</button>
-                <button class="nav-btn main__nav_btn" data-type="shash">Шашлыки</button>
-                <button class="nav-btn main__nav_btn" data-type="set">Сеты</button>
-                <button class="nav-btn main__nav_btn" data-type="combo">Комбо</button>
-                <button class="nav-btn main__nav_btn" data-type="hot">Горячие блюда</button>
-                <button class="nav-btn main__nav_btn" data-type="fastfood">Фастфуд</button>
-                <button class="nav-btn main__nav_btn" data-type="salads">Салаты</button>
+                <button class="main__nav_btn" data-type="sushi">Суши роллы</button>
+                <button class="main__nav_btn" data-type="pizza">Пицца</button>
+                <button class="main__nav_btn" data-type="shash">Шашлыки</button>
+                <button class="main__nav_btn" data-type="set">Сеты</button>
+                <button class="main__nav_btn" data-type="combo">Комбо</button>
+                <button class="main__nav_btn" data-type="hot">Горячие блюда</button>
+                <button class="main__nav_btn" data-type="fastfood">Фастфуд</button>
+                <button class="main__nav_btn" data-type="salads">Салаты</button>
             </nav>
-    
+
             <!-- Контейнер для карточек товаров -->
             <div class="product__cards"></div>
     </main>
@@ -138,7 +217,12 @@
         </div>
     </footer>
 
-    <script src="js/cardLoading_sys.js" ></script>
+    <div id="notification" class="notification" style="display: none;">
+        Товар добавлен в корзину!
+    </div>
+
+
+    <script src="js/cardLoading_sys.js"></script>
     <script src="js/text.js"></script>
 </body>
 
