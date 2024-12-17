@@ -321,6 +321,7 @@ main {
     line-height: 1.55;
     font-weight: 300;
     cursor: pointer;
+    color: #000;
 }
 
 .nav-btn {
