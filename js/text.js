@@ -1,64 +1,46 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const adress_btn = document.getElementById('adress');
-    const delivery_btn = document.getElementById('delivery');
-    const pay_btn = document.getElementById('pay');
-    const contacts_btn = document.getElementById('contacts');
-
-
-
+    const infoBtns = document.querySelectorAll('.nav-btn'); // Все кнопки с классом .info-btn
     const adress_block = document.querySelector('.show-info-adress');
     const adress_h1 = document.querySelector('.show-info-adress-h1');
     const adress_p = document.querySelector('.show-info-adress-p');
     const adress_wrapper = document.querySelector('.info_wrapper');
     const overlay = document.querySelector('.overlay');
 
+    // Обработчик событий для всех кнопок
+    infoBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const infoType = btn.dataset.infoType; // Получаем тип информации из data-атрибута кнопки
 
-    adress_btn.addEventListener('click', () => {
-        adress_h1.innerHTML = 'Адрес'
-        adress_p.innerHTML = 'Актобе, 11 мкр, БЦ Асан, ул. Аз Наурыз, 17'
-        adress_wrapper.style.display = 'flex'; // Показываем родительский контейнер
-        setTimeout(() => {
-            overlay.classList.add('show'); // Показываем затемнение
-            adress_block.classList.add('show'); // Показываем блок адреса
-        }, 10); // Небольшая задержка для обеспечения правильного отображения
+            // В зависимости от типа информации меняем содержимое
+            switch (infoType) {
+                case 'adress':
+                    adress_h1.innerHTML = 'Адрес';
+                    adress_p.innerHTML = 'Актобе, 11 мкр, БЦ Асан, ул. Аз Наурыз, 17';
+                    break;
+                case 'delivery':
+                    adress_h1.innerHTML = 'Доставка';
+                    adress_p.innerHTML = 'Бесплатная доставка за 1 час от 10 000 тг.';
+                    break;
+                case 'pay':
+                    adress_h1.innerHTML = 'Оплата';
+                    adress_p.innerHTML = 'Наличными или QR Kaspi Red';
+                    break;
+                case 'contacts':
+                    adress_h1.innerHTML = 'Контакты';
+                    adress_p.innerHTML = '+7 (708) 471-03-00, +7 (708) 471-03-03';
+                    break;
+            }
+
+            // Показываем блок с информацией
+            adress_wrapper.style.display = 'flex';
+            setTimeout(() => {
+                overlay.classList.add('show');
+                adress_block.classList.add('show');
+            }, 10);
+        });
     });
 
-    delivery_btn.addEventListener('click', () => {
-        adress_h1.innerHTML = 'Доставка'
-        adress_p.innerHTML = 'Бесплатная доставка за 1 час от 10 000 тг.'
-        adress_wrapper.style.display = 'flex'; // Показываем родительский контейнер
-        setTimeout(() => {
-            overlay.classList.add('show'); // Показываем затемнение
-            adress_block.classList.add('show'); // Показываем блок адреса
-        }, 10); // Небольшая задержка для обеспечения правильного отображения
-    });
-
-    pay_btn.addEventListener('click', () => {
-        adress_h1.innerHTML = 'Оплата'
-        adress_p.innerHTML = 'Наличными или QR Kaspi Red'
-        adress_wrapper.style.display = 'flex'; // Показываем родительский контейнер
-        setTimeout(() => {
-            overlay.classList.add('show'); // Показываем затемнение
-            adress_block.classList.add('show'); // Показываем блок адреса
-        }, 10); // Небольшая задержка для обеспечения правильного отображения
-    });
-
-
-    contacts_btn.addEventListener('click', () => {
-        adress_h1.innerHTML = 'Контакты'
-        adress_p.innerHTML = '+7 (708) 471-03-00, +7 (708) 471-03-03'
-        adress_wrapper.style.display = 'flex'; // Показываем родительский контейнер
-        setTimeout(() => {
-            overlay.classList.add('show'); // Показываем затемнение
-            adress_block.classList.add('show'); // Показываем блок адреса
-        }, 10); // Небольшая задержка для обеспечения правильного отображения
-    });
-
-
-
-
-
-
+    // Закрытие окна при клике на overlay
     overlay.addEventListener('click', () => {
         overlay.classList.remove('show');
         adress_block.classList.remove('show');
@@ -67,3 +49,49 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 400);
     });
 });
+
+//hamburger menu system
+const hamMenu = document.querySelector('.ham_Btn');
+const cross = document.querySelector('.cross');
+const offSeenMenu = document.querySelector('.off_screen_menu');
+
+hamMenu.addEventListener('click', () => {
+    offSeenMenu.classList.remove('hide');
+    offSeenMenu.classList.toggle('active');
+
+})
+
+
+cross.addEventListener('click', () => {
+    offSeenMenu.classList.remove('active');
+    offSeenMenu.classList.toggle('hide');
+})
+
+//scroll system
+
+let mybutton = document.getElementById("myBtn");
+let checkout__btn = document.getElementById("checkout__btn");
+// Show or hide the button on scrolllet mybutton = document.getElementById("myBtn");
+
+// Отслеживаем событие прокрутки
+window.onscroll = function () {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.classList.add("show"); 
+        checkout__btn.classList.add("show");
+    } else {
+        mybutton.classList.remove("show");
+        checkout__btn.classList.remove("show");
+    }
+}
+
+// Плавный переход наверх
+function topFunction() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
