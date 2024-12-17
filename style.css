@@ -221,17 +221,20 @@ header {
     margin-top: 15px;
 }
 
-.phones {}
+.phones {
+    color: #000;
+}
 
 .contact-info .phone-1 {
     font-size: 22px;
+    color: #000;
 
 
 }
 
 .contact-info .phone-2 {
     font-size: 22px;
-
+    color: #000;
     line-height: 43px;
 }
 
@@ -980,7 +983,7 @@ main {
     }
 
     .footer-map iframe {
-        max-width: 350px;
+        max-width: 320px;
     }
 
     .addition-info {
