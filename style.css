@@ -983,7 +983,9 @@ main {
     }
 
     .footer-map iframe {
-        max-width: 320px;
+        max-width: 280px;
+        margin-right: 40px;
+        margin-top: 30px;
     }
 
     .addition-info {
